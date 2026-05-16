@@ -1,0 +1,116 @@
+voxel_size = [0.32, 0.32, 0.125]
+
+model = dict(
+    type='MultiViewVoxelNet',
+    data_preprocessor=dict(
+        type='MultiViewDataPreprocessor',
+    bev_voxel_layer=dict(
+        voxel_size=[0.32, 0.32, 5.0],
+        point_cloud_range=[0, -25.6, -3, 51.2, 25.6, 2],
+        max_num_points=32,
+        max_voxels=(16000, 40000)
+    ),
+    side_voxel_layer=dict(
+        voxel_size=[0.32, 51.2, 0.125],
+        point_cloud_range=[0, -25.6, -3, 51.2, 25.6, 2],
+        max_num_points=32,
+        max_voxels=(16000, 40000)
+    )),
+    voxel_encoder=dict(
+        type='MultiViewPillarFeatureNet',
+        bev_in_channels=5,
+        bev_feat_channels=[64],
+        side_in_channels=5,
+        side_feat_channels=[32],
+        with_distance=False,
+        with_cluster_center=False,
+        with_voxel_center=False,
+        with_convolution=False,
+        conv_kernel_size=7,
+        bev_voxel_size=[0.32, 0.32, 5],
+        side_voxel_size=[0.32, 51.2, 0.125],
+        point_cloud_range=[0,-25.6,-3,51.2,25.6,2],
+        # d_model=128,
+        # n_heads=4,
+        # dropout=0.3,
+        # mode='fused'
+        ),
+    middle_encoder=dict(
+        type='IdentityMiddleEncoder', in_channels=64, output_shape=[160,160]),
+    backbone=dict(
+        type='SECOND',
+        in_channels=64,
+        layer_nums=[3, 5, 5],
+        layer_strides=[2, 2, 2],
+        out_channels=[64, 128, 256]),
+    neck=dict(
+        type='SECONDFPN',
+        in_channels=[64, 128, 256],
+        upsample_strides=[1, 2, 4],
+        out_channels=[128, 128, 128]),
+    bbox_head=dict(
+        type='Anchor3DHead',
+        num_classes=3,
+        in_channels=384,
+        feat_channels=384,
+        use_direction_classifier=True,
+        assign_per_class=True,
+        anchor_generator=dict(
+            type='AlignedAnchor3DRangeGenerator',
+            ranges=[
+                [0,-25.6,-0.6,51.2,25.6,-0.6],
+                [0,-25.6,-0.6,51.2,25.6,-0.6],
+                [0, -25.6, -1.78, 51.2, 25.6, -1.78],
+            ],
+            sizes=[[0.8, 0.6, 1.73], [1.76, 0.6, 1.73], [3.9, 1.6, 1.56]],
+            rotations=[0, 1.57],
+            reshape_out=False),
+        diff_rad_by_sin=True,
+        bbox_coder=dict(type='DeltaXYZWLHRBBoxCoder'),
+        loss_cls=dict(
+            type='mmdet.FocalLoss',
+            use_sigmoid=True,
+            gamma=2.0,
+            alpha=0.25,
+            loss_weight=1.0),
+        loss_bbox=dict(
+            type='mmdet.SmoothL1Loss', beta=1.0 / 9.0, loss_weight=2.0),
+        loss_dir=dict(
+            type='mmdet.CrossEntropyLoss', use_sigmoid=False,
+            loss_weight=0.2)),
+    # model training and testing settings
+    train_cfg=dict(
+        assigner=[
+            dict(  # for Pedestrian
+                type='Max3DIoUAssigner',
+                iou_calculator=dict(type='mmdet3d.BboxOverlapsNearest3D'),
+                pos_iou_thr=0.5,
+                neg_iou_thr=0.35,
+                min_pos_iou=0.35,
+                ignore_iof_thr=-1),
+            dict(  # for Cyclist
+                type='Max3DIoUAssigner',
+                iou_calculator=dict(type='mmdet3d.BboxOverlapsNearest3D'),
+                pos_iou_thr=0.5,
+                neg_iou_thr=0.35,
+                min_pos_iou=0.35,
+                ignore_iof_thr=-1),
+            dict(  # for Car
+                type='Max3DIoUAssigner',
+                iou_calculator=dict(type='mmdet3d.BboxOverlapsNearest3D'),
+                pos_iou_thr=0.6,
+                neg_iou_thr=0.45,
+                min_pos_iou=0.45,
+                ignore_iof_thr=-1),
+        ],
+        allowed_border=0,
+        pos_weight=-1,
+        debug=False),
+    test_cfg=dict(
+        use_rotate_nms=True,
+        nms_across_levels=False,
+        nms_thr=0.01,
+        score_thr=0.1,
+        min_bbox_size=0,
+        nms_pre=100,
+        max_num=50))

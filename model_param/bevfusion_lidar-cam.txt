@@ -1,0 +1,572 @@
+🔍 正在分析：/home/vipuser/project/mmdetection3d/work_dirs/bevfusion_lidar-cam_voxel0075_second_secfpn_8xb4-cyclic-20e_vod-3d/epoch_10.pth ...
+
+✓ 检测到 'state_dict' 键
+
+==========================================================================================
+📦 模型权重文件：epoch_10.pth
+📊 总层数：436
+💾 文件大小：413.92 MB
+==========================================================================================
+
+【backbone.blocks】
+  ├─ 子层数：96
+  ├─ 参数量：4.2128 M
+  └─ 权重详情:
+      ├─ backbone.blocks.0.0.weight                              (64, 64, 3, 3)                  36,864
+      ├─ backbone.blocks.0.1.weight                              (64,)                               64
+      ├─ backbone.blocks.0.1.bias                                (64,)                               64
+      ├─ backbone.blocks.0.1.running_mean                        (64,)                               64
+      ├─ backbone.blocks.0.1.running_var                         (64,)                               64
+      ├─ backbone.blocks.0.1.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.0.3.weight                              (64, 64, 3, 3)                  36,864
+      ├─ backbone.blocks.0.4.weight                              (64,)                               64
+      ├─ backbone.blocks.0.4.bias                                (64,)                               64
+      ├─ backbone.blocks.0.4.running_mean                        (64,)                               64
+      ├─ backbone.blocks.0.4.running_var                         (64,)                               64
+      ├─ backbone.blocks.0.4.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.0.6.weight                              (64, 64, 3, 3)                  36,864
+      ├─ backbone.blocks.0.7.weight                              (64,)                               64
+      ├─ backbone.blocks.0.7.bias                                (64,)                               64
+      ├─ backbone.blocks.0.7.running_mean                        (64,)                               64
+      ├─ backbone.blocks.0.7.running_var                         (64,)                               64
+      ├─ backbone.blocks.0.7.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.0.9.weight                              (64, 64, 3, 3)                  36,864
+      ├─ backbone.blocks.0.10.weight                             (64,)                               64
+      ├─ backbone.blocks.0.10.bias                               (64,)                               64
+      ├─ backbone.blocks.0.10.running_mean                       (64,)                               64
+      ├─ backbone.blocks.0.10.running_var                        (64,)                               64
+      ├─ backbone.blocks.0.10.num_batches_tracked                ()                                   1
+      ├─ backbone.blocks.1.0.weight                              (128, 64, 3, 3)                 73,728
+      ├─ backbone.blocks.1.1.weight                              (128,)                             128
+      ├─ backbone.blocks.1.1.bias                                (128,)                             128
+      ├─ backbone.blocks.1.1.running_mean                        (128,)                             128
+      ├─ backbone.blocks.1.1.running_var                         (128,)                             128
+      ├─ backbone.blocks.1.1.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.1.3.weight                              (128, 128, 3, 3)               147,456
+      ├─ backbone.blocks.1.4.weight                              (128,)                             128
+      ├─ backbone.blocks.1.4.bias                                (128,)                             128
+      ├─ backbone.blocks.1.4.running_mean                        (128,)                             128
+      ├─ backbone.blocks.1.4.running_var                         (128,)                             128
+      ├─ backbone.blocks.1.4.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.1.6.weight                              (128, 128, 3, 3)               147,456
+      ├─ backbone.blocks.1.7.weight                              (128,)                             128
+      ├─ backbone.blocks.1.7.bias                                (128,)                             128
+      ├─ backbone.blocks.1.7.running_mean                        (128,)                             128
+      ├─ backbone.blocks.1.7.running_var                         (128,)                             128
+      ├─ backbone.blocks.1.7.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.1.9.weight                              (128, 128, 3, 3)               147,456
+      ├─ backbone.blocks.1.10.weight                             (128,)                             128
+      ├─ backbone.blocks.1.10.bias                               (128,)                             128
+      ├─ backbone.blocks.1.10.running_mean                       (128,)                             128
+      ├─ backbone.blocks.1.10.running_var                        (128,)                             128
+      ├─ backbone.blocks.1.10.num_batches_tracked                ()                                   1
+      ├─ backbone.blocks.1.12.weight                             (128, 128, 3, 3)               147,456
+      ├─ backbone.blocks.1.13.weight                             (128,)                             128
+      ├─ backbone.blocks.1.13.bias                               (128,)                             128
+      ├─ backbone.blocks.1.13.running_mean                       (128,)                             128
+      ├─ backbone.blocks.1.13.running_var                        (128,)                             128
+      ├─ backbone.blocks.1.13.num_batches_tracked                ()                                   1
+      ├─ backbone.blocks.1.15.weight                             (128, 128, 3, 3)               147,456
+      ├─ backbone.blocks.1.16.weight                             (128,)                             128
+      ├─ backbone.blocks.1.16.bias                               (128,)                             128
+      ├─ backbone.blocks.1.16.running_mean                       (128,)                             128
+      ├─ backbone.blocks.1.16.running_var                        (128,)                             128
+      ├─ backbone.blocks.1.16.num_batches_tracked                ()                                   1
+      ├─ backbone.blocks.2.0.weight                              (256, 128, 3, 3)               294,912
+      ├─ backbone.blocks.2.1.weight                              (256,)                             256
+      ├─ backbone.blocks.2.1.bias                                (256,)                             256
+      ├─ backbone.blocks.2.1.running_mean                        (256,)                             256
+      ├─ backbone.blocks.2.1.running_var                         (256,)                             256
+      ├─ backbone.blocks.2.1.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.2.3.weight                              (256, 256, 3, 3)               589,824
+      ├─ backbone.blocks.2.4.weight                              (256,)                             256
+      ├─ backbone.blocks.2.4.bias                                (256,)                             256
+      ├─ backbone.blocks.2.4.running_mean                        (256,)                             256
+      ├─ backbone.blocks.2.4.running_var                         (256,)                             256
+      ├─ backbone.blocks.2.4.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.2.6.weight                              (256, 256, 3, 3)               589,824
+      ├─ backbone.blocks.2.7.weight                              (256,)                             256
+      ├─ backbone.blocks.2.7.bias                                (256,)                             256
+      ├─ backbone.blocks.2.7.running_mean                        (256,)                             256
+      ├─ backbone.blocks.2.7.running_var                         (256,)                             256
+      ├─ backbone.blocks.2.7.num_batches_tracked                 ()                                   1
+      ├─ backbone.blocks.2.9.weight                              (256, 256, 3, 3)               589,824
+      ├─ backbone.blocks.2.10.weight                             (256,)                             256
+      ├─ backbone.blocks.2.10.bias                               (256,)                             256
+      ├─ backbone.blocks.2.10.running_mean                       (256,)                             256
+      ├─ backbone.blocks.2.10.running_var                        (256,)                             256
+      ├─ backbone.blocks.2.10.num_batches_tracked                ()                                   1
+      ├─ backbone.blocks.2.12.weight                             (256, 256, 3, 3)               589,824
+      ├─ backbone.blocks.2.13.weight                             (256,)                             256
+      ├─ backbone.blocks.2.13.bias                               (256,)                             256
+      ├─ backbone.blocks.2.13.running_mean                       (256,)                             256
+      ├─ backbone.blocks.2.13.running_var                        (256,)                             256
+      ├─ backbone.blocks.2.13.num_batches_tracked                ()                                   1
+      ├─ backbone.blocks.2.15.weight                             (256, 256, 3, 3)               589,824
+      ├─ backbone.blocks.2.16.weight                             (256,)                             256
+      ├─ backbone.blocks.2.16.bias                               (256,)                             256
+      ├─ backbone.blocks.2.16.running_mean                       (256,)                             256
+      ├─ backbone.blocks.2.16.running_var                        (256,)                             256
+      └─ backbone.blocks.2.16.num_batches_tracked                ()                                   1
+
+【bbox_head.conv_cls】
+  ├─ 子层数：2
+  ├─ 参数量：0.0069 M
+  └─ 权重详情:
+      ├─ bbox_head.conv_cls.weight                               (18, 384, 1, 1)                  6,912
+      └─ bbox_head.conv_cls.bias                                 (18,)                               18
+
+【bbox_head.conv_dir_cls】
+  ├─ 子层数：2
+  ├─ 参数量：0.0046 M
+  └─ 权重详情:
+      ├─ bbox_head.conv_dir_cls.weight                           (12, 384, 1, 1)                  4,608
+      └─ bbox_head.conv_dir_cls.bias                             (12,)                               12
+
+【bbox_head.conv_reg】
+  ├─ 子层数：2
+  ├─ 参数量：0.0162 M
+  └─ 权重详情:
+      ├─ bbox_head.conv_reg.weight                               (42, 384, 1, 1)                 16,128
+      └─ bbox_head.conv_reg.bias                                 (42,)                               42
+
+【img_backbone.norm1】
+  ├─ 子层数：2
+  ├─ 参数量：0.0004 M
+  └─ 权重详情:
+      ├─ img_backbone.norm1.weight                               (192,)                             192
+      └─ img_backbone.norm1.bias                                 (192,)                             192
+
+【img_backbone.norm2】
+  ├─ 子层数：2
+  ├─ 参数量：0.0008 M
+  └─ 权重详情:
+      ├─ img_backbone.norm2.weight                               (384,)                             384
+      └─ img_backbone.norm2.bias                                 (384,)                             384
+
+【img_backbone.norm3】
+  ├─ 子层数：2
+  ├─ 参数量：0.0015 M
+  └─ 权重详情:
+      ├─ img_backbone.norm3.weight                               (768,)                             768
+      └─ img_backbone.norm3.bias                                 (768,)                             768
+
+【img_backbone.patch_embed】
+  ├─ 子层数：4
+  ├─ 参数量：0.0049 M
+  └─ 权重详情:
+      ├─ img_backbone.patch_embed.projection.weight              (96, 3, 4, 4)                    4,608
+      ├─ img_backbone.patch_embed.projection.bias                (96,)                               96
+      ├─ img_backbone.patch_embed.norm.weight                    (96,)                               96
+      └─ img_backbone.patch_embed.norm.bias                      (96,)                               96
+
+【img_backbone.stages】
+  ├─ 子层数：177
+  ├─ 参数量：27.5417 M
+  └─ 权重详情:
+      ├─ img_backbone.stages.0.blocks.0.norm1.weight             (96,)                               96
+      ├─ img_backbone.stages.0.blocks.0.norm1.bias               (96,)                               96
+      ├─ img_backbone.stages.0.blocks.0.attn.w_msa.relative_position_bias_table (169, 3)                           507
+      ├─ img_backbone.stages.0.blocks.0.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.0.blocks.0.attn.w_msa.qkv.weight    (288, 96)                       27,648
+      ├─ img_backbone.stages.0.blocks.0.attn.w_msa.qkv.bias      (288,)                             288
+      ├─ img_backbone.stages.0.blocks.0.attn.w_msa.proj.weight   (96, 96)                         9,216
+      ├─ img_backbone.stages.0.blocks.0.attn.w_msa.proj.bias     (96,)                               96
+      ├─ img_backbone.stages.0.blocks.0.norm2.weight             (96,)                               96
+      ├─ img_backbone.stages.0.blocks.0.norm2.bias               (96,)                               96
+      ├─ img_backbone.stages.0.blocks.0.ffn.layers.0.0.weight    (384, 96)                       36,864
+      ├─ img_backbone.stages.0.blocks.0.ffn.layers.0.0.bias      (384,)                             384
+      ├─ img_backbone.stages.0.blocks.0.ffn.layers.1.weight      (96, 384)                       36,864
+      ├─ img_backbone.stages.0.blocks.0.ffn.layers.1.bias        (96,)                               96
+      ├─ img_backbone.stages.0.blocks.1.norm1.weight             (96,)                               96
+      ├─ img_backbone.stages.0.blocks.1.norm1.bias               (96,)                               96
+      ├─ img_backbone.stages.0.blocks.1.attn.w_msa.relative_position_bias_table (169, 3)                           507
+      ├─ img_backbone.stages.0.blocks.1.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.0.blocks.1.attn.w_msa.qkv.weight    (288, 96)                       27,648
+      ├─ img_backbone.stages.0.blocks.1.attn.w_msa.qkv.bias      (288,)                             288
+      ├─ img_backbone.stages.0.blocks.1.attn.w_msa.proj.weight   (96, 96)                         9,216
+      ├─ img_backbone.stages.0.blocks.1.attn.w_msa.proj.bias     (96,)                               96
+      ├─ img_backbone.stages.0.blocks.1.norm2.weight             (96,)                               96
+      ├─ img_backbone.stages.0.blocks.1.norm2.bias               (96,)                               96
+      ├─ img_backbone.stages.0.blocks.1.ffn.layers.0.0.weight    (384, 96)                       36,864
+      ├─ img_backbone.stages.0.blocks.1.ffn.layers.0.0.bias      (384,)                             384
+      ├─ img_backbone.stages.0.blocks.1.ffn.layers.1.weight      (96, 384)                       36,864
+      ├─ img_backbone.stages.0.blocks.1.ffn.layers.1.bias        (96,)                               96
+      ├─ img_backbone.stages.0.downsample.norm.weight            (384,)                             384
+      ├─ img_backbone.stages.0.downsample.norm.bias              (384,)                             384
+      ├─ img_backbone.stages.0.downsample.reduction.weight       (192, 384)                      73,728
+      ├─ img_backbone.stages.1.blocks.0.norm1.weight             (192,)                             192
+      ├─ img_backbone.stages.1.blocks.0.norm1.bias               (192,)                             192
+      ├─ img_backbone.stages.1.blocks.0.attn.w_msa.relative_position_bias_table (169, 6)                         1,014
+      ├─ img_backbone.stages.1.blocks.0.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.1.blocks.0.attn.w_msa.qkv.weight    (576, 192)                     110,592
+      ├─ img_backbone.stages.1.blocks.0.attn.w_msa.qkv.bias      (576,)                             576
+      ├─ img_backbone.stages.1.blocks.0.attn.w_msa.proj.weight   (192, 192)                      36,864
+      ├─ img_backbone.stages.1.blocks.0.attn.w_msa.proj.bias     (192,)                             192
+      ├─ img_backbone.stages.1.blocks.0.norm2.weight             (192,)                             192
+      ├─ img_backbone.stages.1.blocks.0.norm2.bias               (192,)                             192
+      ├─ img_backbone.stages.1.blocks.0.ffn.layers.0.0.weight    (768, 192)                     147,456
+      ├─ img_backbone.stages.1.blocks.0.ffn.layers.0.0.bias      (768,)                             768
+      ├─ img_backbone.stages.1.blocks.0.ffn.layers.1.weight      (192, 768)                     147,456
+      ├─ img_backbone.stages.1.blocks.0.ffn.layers.1.bias        (192,)                             192
+      ├─ img_backbone.stages.1.blocks.1.norm1.weight             (192,)                             192
+      ├─ img_backbone.stages.1.blocks.1.norm1.bias               (192,)                             192
+      ├─ img_backbone.stages.1.blocks.1.attn.w_msa.relative_position_bias_table (169, 6)                         1,014
+      ├─ img_backbone.stages.1.blocks.1.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.1.blocks.1.attn.w_msa.qkv.weight    (576, 192)                     110,592
+      ├─ img_backbone.stages.1.blocks.1.attn.w_msa.qkv.bias      (576,)                             576
+      ├─ img_backbone.stages.1.blocks.1.attn.w_msa.proj.weight   (192, 192)                      36,864
+      ├─ img_backbone.stages.1.blocks.1.attn.w_msa.proj.bias     (192,)                             192
+      ├─ img_backbone.stages.1.blocks.1.norm2.weight             (192,)                             192
+      ├─ img_backbone.stages.1.blocks.1.norm2.bias               (192,)                             192
+      ├─ img_backbone.stages.1.blocks.1.ffn.layers.0.0.weight    (768, 192)                     147,456
+      ├─ img_backbone.stages.1.blocks.1.ffn.layers.0.0.bias      (768,)                             768
+      ├─ img_backbone.stages.1.blocks.1.ffn.layers.1.weight      (192, 768)                     147,456
+      ├─ img_backbone.stages.1.blocks.1.ffn.layers.1.bias        (192,)                             192
+      ├─ img_backbone.stages.1.downsample.norm.weight            (768,)                             768
+      ├─ img_backbone.stages.1.downsample.norm.bias              (768,)                             768
+      ├─ img_backbone.stages.1.downsample.reduction.weight       (384, 768)                     294,912
+      ├─ img_backbone.stages.2.blocks.0.norm1.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.0.norm1.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.0.attn.w_msa.relative_position_bias_table (169, 12)                        2,028
+      ├─ img_backbone.stages.2.blocks.0.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.2.blocks.0.attn.w_msa.qkv.weight    (1152, 384)                    442,368
+      ├─ img_backbone.stages.2.blocks.0.attn.w_msa.qkv.bias      (1152,)                          1,152
+      ├─ img_backbone.stages.2.blocks.0.attn.w_msa.proj.weight   (384, 384)                     147,456
+      ├─ img_backbone.stages.2.blocks.0.attn.w_msa.proj.bias     (384,)                             384
+      ├─ img_backbone.stages.2.blocks.0.norm2.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.0.norm2.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.0.ffn.layers.0.0.weight    (1536, 384)                    589,824
+      ├─ img_backbone.stages.2.blocks.0.ffn.layers.0.0.bias      (1536,)                          1,536
+      ├─ img_backbone.stages.2.blocks.0.ffn.layers.1.weight      (384, 1536)                    589,824
+      ├─ img_backbone.stages.2.blocks.0.ffn.layers.1.bias        (384,)                             384
+      ├─ img_backbone.stages.2.blocks.1.norm1.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.1.norm1.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.1.attn.w_msa.relative_position_bias_table (169, 12)                        2,028
+      ├─ img_backbone.stages.2.blocks.1.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.2.blocks.1.attn.w_msa.qkv.weight    (1152, 384)                    442,368
+      ├─ img_backbone.stages.2.blocks.1.attn.w_msa.qkv.bias      (1152,)                          1,152
+      ├─ img_backbone.stages.2.blocks.1.attn.w_msa.proj.weight   (384, 384)                     147,456
+      ├─ img_backbone.stages.2.blocks.1.attn.w_msa.proj.bias     (384,)                             384
+      ├─ img_backbone.stages.2.blocks.1.norm2.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.1.norm2.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.1.ffn.layers.0.0.weight    (1536, 384)                    589,824
+      ├─ img_backbone.stages.2.blocks.1.ffn.layers.0.0.bias      (1536,)                          1,536
+      ├─ img_backbone.stages.2.blocks.1.ffn.layers.1.weight      (384, 1536)                    589,824
+      ├─ img_backbone.stages.2.blocks.1.ffn.layers.1.bias        (384,)                             384
+      ├─ img_backbone.stages.2.blocks.2.norm1.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.2.norm1.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.2.attn.w_msa.relative_position_bias_table (169, 12)                        2,028
+      ├─ img_backbone.stages.2.blocks.2.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.2.blocks.2.attn.w_msa.qkv.weight    (1152, 384)                    442,368
+      ├─ img_backbone.stages.2.blocks.2.attn.w_msa.qkv.bias      (1152,)                          1,152
+      ├─ img_backbone.stages.2.blocks.2.attn.w_msa.proj.weight   (384, 384)                     147,456
+      ├─ img_backbone.stages.2.blocks.2.attn.w_msa.proj.bias     (384,)                             384
+      ├─ img_backbone.stages.2.blocks.2.norm2.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.2.norm2.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.2.ffn.layers.0.0.weight    (1536, 384)                    589,824
+      ├─ img_backbone.stages.2.blocks.2.ffn.layers.0.0.bias      (1536,)                          1,536
+      ├─ img_backbone.stages.2.blocks.2.ffn.layers.1.weight      (384, 1536)                    589,824
+      ├─ img_backbone.stages.2.blocks.2.ffn.layers.1.bias        (384,)                             384
+      ├─ img_backbone.stages.2.blocks.3.norm1.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.3.norm1.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.3.attn.w_msa.relative_position_bias_table (169, 12)                        2,028
+      ├─ img_backbone.stages.2.blocks.3.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.2.blocks.3.attn.w_msa.qkv.weight    (1152, 384)                    442,368
+      ├─ img_backbone.stages.2.blocks.3.attn.w_msa.qkv.bias      (1152,)                          1,152
+      ├─ img_backbone.stages.2.blocks.3.attn.w_msa.proj.weight   (384, 384)                     147,456
+      ├─ img_backbone.stages.2.blocks.3.attn.w_msa.proj.bias     (384,)                             384
+      ├─ img_backbone.stages.2.blocks.3.norm2.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.3.norm2.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.3.ffn.layers.0.0.weight    (1536, 384)                    589,824
+      ├─ img_backbone.stages.2.blocks.3.ffn.layers.0.0.bias      (1536,)                          1,536
+      ├─ img_backbone.stages.2.blocks.3.ffn.layers.1.weight      (384, 1536)                    589,824
+      ├─ img_backbone.stages.2.blocks.3.ffn.layers.1.bias        (384,)                             384
+      ├─ img_backbone.stages.2.blocks.4.norm1.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.4.norm1.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.4.attn.w_msa.relative_position_bias_table (169, 12)                        2,028
+      ├─ img_backbone.stages.2.blocks.4.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.2.blocks.4.attn.w_msa.qkv.weight    (1152, 384)                    442,368
+      ├─ img_backbone.stages.2.blocks.4.attn.w_msa.qkv.bias      (1152,)                          1,152
+      ├─ img_backbone.stages.2.blocks.4.attn.w_msa.proj.weight   (384, 384)                     147,456
+      ├─ img_backbone.stages.2.blocks.4.attn.w_msa.proj.bias     (384,)                             384
+      ├─ img_backbone.stages.2.blocks.4.norm2.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.4.norm2.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.4.ffn.layers.0.0.weight    (1536, 384)                    589,824
+      ├─ img_backbone.stages.2.blocks.4.ffn.layers.0.0.bias      (1536,)                          1,536
+      ├─ img_backbone.stages.2.blocks.4.ffn.layers.1.weight      (384, 1536)                    589,824
+      ├─ img_backbone.stages.2.blocks.4.ffn.layers.1.bias        (384,)                             384
+      ├─ img_backbone.stages.2.blocks.5.norm1.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.5.norm1.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.5.attn.w_msa.relative_position_bias_table (169, 12)                        2,028
+      ├─ img_backbone.stages.2.blocks.5.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.2.blocks.5.attn.w_msa.qkv.weight    (1152, 384)                    442,368
+      ├─ img_backbone.stages.2.blocks.5.attn.w_msa.qkv.bias      (1152,)                          1,152
+      ├─ img_backbone.stages.2.blocks.5.attn.w_msa.proj.weight   (384, 384)                     147,456
+      ├─ img_backbone.stages.2.blocks.5.attn.w_msa.proj.bias     (384,)                             384
+      ├─ img_backbone.stages.2.blocks.5.norm2.weight             (384,)                             384
+      ├─ img_backbone.stages.2.blocks.5.norm2.bias               (384,)                             384
+      ├─ img_backbone.stages.2.blocks.5.ffn.layers.0.0.weight    (1536, 384)                    589,824
+      ├─ img_backbone.stages.2.blocks.5.ffn.layers.0.0.bias      (1536,)                          1,536
+      ├─ img_backbone.stages.2.blocks.5.ffn.layers.1.weight      (384, 1536)                    589,824
+      ├─ img_backbone.stages.2.blocks.5.ffn.layers.1.bias        (384,)                             384
+      ├─ img_backbone.stages.2.downsample.norm.weight            (1536,)                          1,536
+      ├─ img_backbone.stages.2.downsample.norm.bias              (1536,)                          1,536
+      ├─ img_backbone.stages.2.downsample.reduction.weight       (768, 1536)                  1,179,648
+      ├─ img_backbone.stages.3.blocks.0.norm1.weight             (768,)                             768
+      ├─ img_backbone.stages.3.blocks.0.norm1.bias               (768,)                             768
+      ├─ img_backbone.stages.3.blocks.0.attn.w_msa.relative_position_bias_table (169, 24)                        4,056
+      ├─ img_backbone.stages.3.blocks.0.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.3.blocks.0.attn.w_msa.qkv.weight    (2304, 768)                  1,769,472
+      ├─ img_backbone.stages.3.blocks.0.attn.w_msa.qkv.bias      (2304,)                          2,304
+      ├─ img_backbone.stages.3.blocks.0.attn.w_msa.proj.weight   (768, 768)                     589,824
+      ├─ img_backbone.stages.3.blocks.0.attn.w_msa.proj.bias     (768,)                             768
+      ├─ img_backbone.stages.3.blocks.0.norm2.weight             (768,)                             768
+      ├─ img_backbone.stages.3.blocks.0.norm2.bias               (768,)                             768
+      ├─ img_backbone.stages.3.blocks.0.ffn.layers.0.0.weight    (3072, 768)                  2,359,296
+      ├─ img_backbone.stages.3.blocks.0.ffn.layers.0.0.bias      (3072,)                          3,072
+      ├─ img_backbone.stages.3.blocks.0.ffn.layers.1.weight      (768, 3072)                  2,359,296
+      ├─ img_backbone.stages.3.blocks.0.ffn.layers.1.bias        (768,)                             768
+      ├─ img_backbone.stages.3.blocks.1.norm1.weight             (768,)                             768
+      ├─ img_backbone.stages.3.blocks.1.norm1.bias               (768,)                             768
+      ├─ img_backbone.stages.3.blocks.1.attn.w_msa.relative_position_bias_table (169, 24)                        4,056
+      ├─ img_backbone.stages.3.blocks.1.attn.w_msa.relative_position_index (49, 49)                         2,401
+      ├─ img_backbone.stages.3.blocks.1.attn.w_msa.qkv.weight    (2304, 768)                  1,769,472
+      ├─ img_backbone.stages.3.blocks.1.attn.w_msa.qkv.bias      (2304,)                          2,304
+      ├─ img_backbone.stages.3.blocks.1.attn.w_msa.proj.weight   (768, 768)                     589,824
+      ├─ img_backbone.stages.3.blocks.1.attn.w_msa.proj.bias     (768,)                             768
+      ├─ img_backbone.stages.3.blocks.1.norm2.weight             (768,)                             768
+      ├─ img_backbone.stages.3.blocks.1.norm2.bias               (768,)                             768
+      ├─ img_backbone.stages.3.blocks.1.ffn.layers.0.0.weight    (3072, 768)                  2,359,296
+      ├─ img_backbone.stages.3.blocks.1.ffn.layers.0.0.bias      (3072,)                          3,072
+      ├─ img_backbone.stages.3.blocks.1.ffn.layers.1.weight      (768, 3072)                  2,359,296
+      └─ img_backbone.stages.3.blocks.1.ffn.layers.1.bias        (768,)                             768
+
+【img_neck.fpn_convs】
+  ├─ 子层数：12
+  ├─ 参数量：1.1817 M
+  └─ 权重详情:
+      ├─ img_neck.fpn_convs.0.conv.weight                        (256, 256, 3, 3)               589,824
+      ├─ img_neck.fpn_convs.0.bn.weight                          (256,)                             256
+      ├─ img_neck.fpn_convs.0.bn.bias                            (256,)                             256
+      ├─ img_neck.fpn_convs.0.bn.running_mean                    (256,)                             256
+      ├─ img_neck.fpn_convs.0.bn.running_var                     (256,)                             256
+      ├─ img_neck.fpn_convs.0.bn.num_batches_tracked             ()                                   1
+      ├─ img_neck.fpn_convs.1.conv.weight                        (256, 256, 3, 3)               589,824
+      ├─ img_neck.fpn_convs.1.bn.weight                          (256,)                             256
+      ├─ img_neck.fpn_convs.1.bn.bias                            (256,)                             256
+      ├─ img_neck.fpn_convs.1.bn.running_mean                    (256,)                             256
+      ├─ img_neck.fpn_convs.1.bn.running_var                     (256,)                             256
+      └─ img_neck.fpn_convs.1.bn.num_batches_tracked             ()                                   1
+
+【img_neck.lateral_convs】
+  ├─ 子层数：12
+  ├─ 参数量：0.4117 M
+  └─ 权重详情:
+      ├─ img_neck.lateral_convs.0.conv.weight                    (256, 448, 1, 1)               114,688
+      ├─ img_neck.lateral_convs.0.bn.weight                      (256,)                             256
+      ├─ img_neck.lateral_convs.0.bn.bias                        (256,)                             256
+      ├─ img_neck.lateral_convs.0.bn.running_mean                (256,)                             256
+      ├─ img_neck.lateral_convs.0.bn.running_var                 (256,)                             256
+      ├─ img_neck.lateral_convs.0.bn.num_batches_tracked         ()                                   1
+      ├─ img_neck.lateral_convs.1.conv.weight                    (256, 1152, 1, 1)              294,912
+      ├─ img_neck.lateral_convs.1.bn.weight                      (256,)                             256
+      ├─ img_neck.lateral_convs.1.bn.bias                        (256,)                             256
+      ├─ img_neck.lateral_convs.1.bn.running_mean                (256,)                             256
+      ├─ img_neck.lateral_convs.1.bn.running_var                 (256,)                             256
+      └─ img_neck.lateral_convs.1.bn.num_batches_tracked         ()                                   1
+
+【neck.deblocks】
+  ├─ 子层数：18
+  ├─ 参数量：0.5996 M
+  └─ 权重详情:
+      ├─ neck.deblocks.0.0.weight                                (64, 128, 1, 1)                  8,192
+      ├─ neck.deblocks.0.1.weight                                (128,)                             128
+      ├─ neck.deblocks.0.1.bias                                  (128,)                             128
+      ├─ neck.deblocks.0.1.running_mean                          (128,)                             128
+      ├─ neck.deblocks.0.1.running_var                           (128,)                             128
+      ├─ neck.deblocks.0.1.num_batches_tracked                   ()                                   1
+      ├─ neck.deblocks.1.0.weight                                (128, 128, 2, 2)                65,536
+      ├─ neck.deblocks.1.1.weight                                (128,)                             128
+      ├─ neck.deblocks.1.1.bias                                  (128,)                             128
+      ├─ neck.deblocks.1.1.running_mean                          (128,)                             128
+      ├─ neck.deblocks.1.1.running_var                           (128,)                             128
+      ├─ neck.deblocks.1.1.num_batches_tracked                   ()                                   1
+      ├─ neck.deblocks.2.0.weight                                (256, 128, 4, 4)               524,288
+      ├─ neck.deblocks.2.1.weight                                (128,)                             128
+      ├─ neck.deblocks.2.1.bias                                  (128,)                             128
+      ├─ neck.deblocks.2.1.running_mean                          (128,)                             128
+      ├─ neck.deblocks.2.1.running_var                           (128,)                             128
+      └─ neck.deblocks.2.1.num_batches_tracked                   ()                                   1
+
+【pts_voxel_encoder.bev_pfn】
+  ├─ 子层数：13
+  ├─ 参数量：0.0090 M
+  └─ 权重详情:
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.query            (8, 8)                              64
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.norm.weight      (64,)                               64
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.norm.bias        (64,)                               64
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.norm.running_mean (64,)                               64
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.norm.running_var (64,)                               64
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.norm.num_batches_tracked ()                                   1
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.linear.weight    (64, 5)                            320
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.key_proj.weight  (64, 64)                         4,096
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.value_proj.weight (64, 64)                         4,096
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.gate_mlp.0.weight (32, 2)                             64
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.gate_mlp.0.bias  (32,)                               32
+      ├─ pts_voxel_encoder.bev_pfn.pfn_layers.0.gate_mlp.2.weight (1, 32)                             32
+      └─ pts_voxel_encoder.bev_pfn.pfn_layers.0.gate_mlp.2.bias  (1,)                                 1
+
+【pts_voxel_encoder.fusion】
+  ├─ 子层数：20
+  ├─ 参数量：0.1942 M
+  └─ 权重详情:
+      ├─ pts_voxel_encoder.fusion.pos_enc_y                      (160, 1, 128)                   20,480
+      ├─ pts_voxel_encoder.fusion.pos_enc_z                      (160, 1, 128)                   20,480
+      ├─ pts_voxel_encoder.fusion.proj_bev.weight                (128, 64)                        8,192
+      ├─ pts_voxel_encoder.fusion.proj_bev.bias                  (128,)                             128
+      ├─ pts_voxel_encoder.fusion.proj_side.weight               (128, 32)                        4,096
+      ├─ pts_voxel_encoder.fusion.proj_side.bias                 (128,)                             128
+      ├─ pts_voxel_encoder.fusion.attention.in_proj_weight       (384, 128)                      49,152
+      ├─ pts_voxel_encoder.fusion.attention.in_proj_bias         (384,)                             384
+      ├─ pts_voxel_encoder.fusion.attention.out_proj.weight      (128, 128)                      16,384
+      ├─ pts_voxel_encoder.fusion.attention.out_proj.bias        (128,)                             128
+      ├─ pts_voxel_encoder.fusion.norm1.weight                   (128,)                             128
+      ├─ pts_voxel_encoder.fusion.norm1.bias                     (128,)                             128
+      ├─ pts_voxel_encoder.fusion.ffn.0.weight                   (256, 128)                      32,768
+      ├─ pts_voxel_encoder.fusion.ffn.0.bias                     (256,)                             256
+      ├─ pts_voxel_encoder.fusion.ffn.3.weight                   (128, 256)                      32,768
+      ├─ pts_voxel_encoder.fusion.ffn.3.bias                     (128,)                             128
+      ├─ pts_voxel_encoder.fusion.norm2.weight                   (128,)                             128
+      ├─ pts_voxel_encoder.fusion.norm2.bias                     (128,)                             128
+      ├─ pts_voxel_encoder.fusion.out_proj.weight                (64, 128)                        8,192
+      └─ pts_voxel_encoder.fusion.out_proj.bias                  (64,)                               64
+
+【pts_voxel_encoder.side_pfn】
+  ├─ 子层数：13
+  ├─ 参数量：0.0025 M
+  └─ 权重详情:
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.query           (8, 4)                              32
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.norm.weight     (32,)                               32
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.norm.bias       (32,)                               32
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.norm.running_mean (32,)                               32
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.norm.running_var (32,)                               32
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.norm.num_batches_tracked ()                                   1
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.linear.weight   (32, 5)                            160
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.key_proj.weight (32, 32)                         1,024
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.value_proj.weight (32, 32)                         1,024
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.gate_mlp.0.weight (32, 2)                             64
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.gate_mlp.0.bias (32,)                               32
+      ├─ pts_voxel_encoder.side_pfn.pfn_layers.0.gate_mlp.2.weight (1, 32)                             32
+      └─ pts_voxel_encoder.side_pfn.pfn_layers.0.gate_mlp.2.bias (1,)                                 1
+
+【view_transform】
+  ├─ 子层数：4
+  ├─ 参数量：0.9969 M
+  └─ 权重详情:
+      ├─ view_transform.dx                                       (3,)                                 3
+      ├─ view_transform.bx                                       (3,)                                 3
+      ├─ view_transform.nx                                       (3,)                                 3
+      └─ view_transform.frustum                                  (118, 32, 88, 3)               996,864
+
+【view_transform.depthnet】
+  ├─ 子层数：16
+  ├─ 参数量：1.3764 M
+  └─ 权重详情:
+      ├─ view_transform.depthnet.0.weight                        (256, 320, 3, 3)               737,280
+      ├─ view_transform.depthnet.0.bias                          (256,)                             256
+      ├─ view_transform.depthnet.1.weight                        (256,)                             256
+      ├─ view_transform.depthnet.1.bias                          (256,)                             256
+      ├─ view_transform.depthnet.1.running_mean                  (256,)                             256
+      ├─ view_transform.depthnet.1.running_var                   (256,)                             256
+      ├─ view_transform.depthnet.1.num_batches_tracked           ()                                   1
+      ├─ view_transform.depthnet.3.weight                        (256, 256, 3, 3)               589,824
+      ├─ view_transform.depthnet.3.bias                          (256,)                             256
+      ├─ view_transform.depthnet.4.weight                        (256,)                             256
+      ├─ view_transform.depthnet.4.bias                          (256,)                             256
+      ├─ view_transform.depthnet.4.running_mean                  (256,)                             256
+      ├─ view_transform.depthnet.4.running_var                   (256,)                             256
+      ├─ view_transform.depthnet.4.num_batches_tracked           ()                                   1
+      ├─ view_transform.depthnet.6.weight                        (182, 256, 1, 1)                46,592
+      └─ view_transform.depthnet.6.bias                          (182,)                             182
+
+【view_transform.downsample】
+  ├─ 子层数：18
+  ├─ 参数量：0.1114 M
+  └─ 权重详情:
+      ├─ view_transform.downsample.0.weight                      (64, 64, 3, 3)                  36,864
+      ├─ view_transform.downsample.1.weight                      (64,)                               64
+      ├─ view_transform.downsample.1.bias                        (64,)                               64
+      ├─ view_transform.downsample.1.running_mean                (64,)                               64
+      ├─ view_transform.downsample.1.running_var                 (64,)                               64
+      ├─ view_transform.downsample.1.num_batches_tracked         ()                                   1
+      ├─ view_transform.downsample.3.weight                      (64, 64, 3, 3)                  36,864
+      ├─ view_transform.downsample.4.weight                      (64,)                               64
+      ├─ view_transform.downsample.4.bias                        (64,)                               64
+      ├─ view_transform.downsample.4.running_mean                (64,)                               64
+      ├─ view_transform.downsample.4.running_var                 (64,)                               64
+      ├─ view_transform.downsample.4.num_batches_tracked         ()                                   1
+      ├─ view_transform.downsample.6.weight                      (64, 64, 3, 3)                  36,864
+      ├─ view_transform.downsample.7.weight                      (64,)                               64
+      ├─ view_transform.downsample.7.bias                        (64,)                               64
+      ├─ view_transform.downsample.7.running_mean                (64,)                               64
+      ├─ view_transform.downsample.7.running_var                 (64,)                               64
+      └─ view_transform.downsample.7.num_batches_tracked         ()                                   1
+
+【view_transform.dtransform】
+  ├─ 子层数：21
+  ├─ 参数量：0.0581 M
+  └─ 权重详情:
+      ├─ view_transform.dtransform.0.weight                      (8, 1, 1, 1)                         8
+      ├─ view_transform.dtransform.0.bias                        (8,)                                 8
+      ├─ view_transform.dtransform.1.weight                      (8,)                                 8
+      ├─ view_transform.dtransform.1.bias                        (8,)                                 8
+      ├─ view_transform.dtransform.1.running_mean                (8,)                                 8
+      ├─ view_transform.dtransform.1.running_var                 (8,)                                 8
+      ├─ view_transform.dtransform.1.num_batches_tracked         ()                                   1
+      ├─ view_transform.dtransform.3.weight                      (32, 8, 5, 5)                    6,400
+      ├─ view_transform.dtransform.3.bias                        (32,)                               32
+      ├─ view_transform.dtransform.4.weight                      (32,)                               32
+      ├─ view_transform.dtransform.4.bias                        (32,)                               32
+      ├─ view_transform.dtransform.4.running_mean                (32,)                               32
+      ├─ view_transform.dtransform.4.running_var                 (32,)                               32
+      ├─ view_transform.dtransform.4.num_batches_tracked         ()                                   1
+      ├─ view_transform.dtransform.6.weight                      (64, 32, 5, 5)                  51,200
+      ├─ view_transform.dtransform.6.bias                        (64,)                               64
+      ├─ view_transform.dtransform.7.weight                      (64,)                               64
+      ├─ view_transform.dtransform.7.bias                        (64,)                               64
+      ├─ view_transform.dtransform.7.running_mean                (64,)                               64
+      ├─ view_transform.dtransform.7.running_var                 (64,)                               64
+      └─ view_transform.dtransform.7.num_batches_tracked         ()                                   1
+
+==========================================================================================
+📋 模块汇总
+==========================================================================================
+模块名                                  层数      参数量 (M)         占比
+------------------------------------------------------------------------------------------
+img_backbone.stages                 177      27.5417     74.98%
+backbone.blocks                      96       4.2128     11.47%
+view_transform.depthnet              16       1.3764      3.75%
+img_neck.fpn_convs                   12       1.1817      3.22%
+view_transform                        4       0.9969      2.71%
+neck.deblocks                        18       0.5996      1.63%
+img_neck.lateral_convs               12       0.4117      1.12%
+pts_voxel_encoder.fusion             20       0.1942      0.53%
+view_transform.downsample            18       0.1114      0.30%
+view_transform.dtransform            21       0.0581      0.16%
+bbox_head.conv_reg                    2       0.0162      0.04%
+pts_voxel_encoder.bev_pfn            13       0.0090      0.02%
+bbox_head.conv_cls                    2       0.0069      0.02%
+img_backbone.patch_embed              4       0.0049      0.01%
+bbox_head.conv_dir_cls                2       0.0046      0.01%
+pts_voxel_encoder.side_pfn           13       0.0025      0.01%
+img_backbone.norm3                    2       0.0015      0.00%
+img_backbone.norm2                    2       0.0008      0.00%
+img_backbone.norm1                    2       0.0004      0.00%
+------------------------------------------------------------------------------------------
+TOTAL                               436      36.7312    100.00%
+==========================================================================================
+
+💡 总参数量：36.73 M (36,731,200)
+==========================================================================================
+

@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "tools/train.py", line 12, in <module>
+    from mmdet3d.utils import replace_ceph_backend
+  File "/home/vipuser/project/mmdetection3d/mmdet3d/utils/__init__.py", line 7, in <module>
+    from .typing_utils import (ConfigType, InstanceList, MultiConfig,
+  File "/home/vipuser/project/mmdetection3d/mmdet3d/utils/typing_utils.py", line 5, in <module>
+    from mmdet.models.task_modules.samplers import SamplingResult
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/models/__init__.py", line 2, in <module>
+    from .backbones import *  # noqa: F401,F403
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/models/backbones/__init__.py", line 2, in <module>
+    from .csp_darknet import CSPDarknet
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/models/backbones/csp_darknet.py", line 11, in <module>
+    from ..layers import CSPLayer
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/models/layers/__init__.py", line 3, in <module>
+    from .bbox_nms import fast_nms, multiclass_nms
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/models/layers/bbox_nms.py", line 9, in <module>
+    from mmdet.utils import ConfigType
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/utils/__init__.py", line 10, in <module>
+    from .mot_error_visualize import imshow_mot_errors
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mmdet/utils/mot_error_visualize.py", line 10, in <module>
+    import matplotlib.pyplot as plt
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/pyplot.py", line 57, in <module>
+    from matplotlib.figure import Figure, figaspect
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/figure.py", line 25, in <module>
+    from matplotlib import _blocking_input, docstring, projections
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/projections/__init__.py", line 58, in <module>
+    from mpl_toolkits.mplot3d import Axes3D
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mpl_toolkits/mplot3d/__init__.py", line 1, in <module>
+    from .axes3d import Axes3D
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axes3d.py", line 41, in <module>
+    from . import axis3d
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/mpl_toolkits/mplot3d/axis3d.py", line 533, in <module>
+    class ZAxis(Axis):
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/artist.py", line 120, in __init_subclass__
+    cls._update_set_signature_and_docstring()
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/artist.py", line 141, in _update_set_signature_and_docstring
+    for prop in ArtistInspector(cls).get_setters()
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/artist.py", line 1358, in __init__
+    self.aliasd = self.get_aliases()
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/artist.py", line 1377, in get_aliases
+    if not self.is_alias(func):
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/site-packages/matplotlib/artist.py", line 1456, in is_alias
+    ds = inspect.getdoc(o)
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/inspect.py", line 623, in getdoc
+    return cleandoc(doc)
+  File "/home/vipuser/.conda/envs/mm3d/lib/python3.8/inspect.py", line 646, in cleandoc
+    for i in range(1, len(lines)): lines[i] = lines[i][margin:]
+KeyboardInterrupt
